@@ -59,6 +59,12 @@ This is the **Axon Ivy Portal** - the main end-user portal for the Axon Ivy Plat
 
 ### Java Code Standards
 
+#### Code Formatting
+- **Indentation**: Use 2 spaces for indentation (NO TABS)
+- **Line Endings**: Consistent line endings
+- **Imports**: Remove unused imports - keep imports clean and organized
+- **Import Order**: Standard Java import ordering (java.*, javax.*, org.*, com.*, ch.*)
+
 #### Package Structure
 - **Core utilities**: `ch.ivy.addon.portalkit.util.*`
 - **Business beans**: `ch.ivy.addon.portalkit.bean.*`
@@ -160,6 +166,8 @@ This is the **Axon Ivy Portal** - the main end-user portal for the Axon Ivy Plat
 ### File-Specific Review Focus
 
 #### When reviewing `.java` files:
+- ✓ Check indentation is exactly 2 spaces (no tabs)
+- ✓ Verify all unused imports are removed
 - ✓ Check Javadoc completeness
 - ✓ Verify null safety handling
 - ✓ Ensure proper use of Sudo for security operations
@@ -169,6 +177,7 @@ This is the **Axon Ivy Portal** - the main end-user portal for the Axon Ivy Plat
 - ✓ Look for potential performance issues (N+1 queries, inefficient loops)
 
 #### When reviewing `.xhtml` files:
+- ✓ Check indentation is exactly 2 spaces (no tabs)
 - ✓ Check for proper PrimeFaces component usage
 - ✓ Verify backing bean bindings
 - ✓ Ensure accessibility attributes (ARIA labels)
@@ -176,6 +185,7 @@ This is the **Axon Ivy Portal** - the main end-user portal for the Axon Ivy Plat
 - ✓ Validate responsive design considerations
 
 #### When reviewing `pom.xml` files:
+- ✓ Check indentation is exactly 2 spaces (no tabs)
 - ✓ Verify version consistency (current: 13.2.0-SNAPSHOT)
 - ✓ Check for proper dependency scopes
 - ✓ Ensure parent POM reference is correct
