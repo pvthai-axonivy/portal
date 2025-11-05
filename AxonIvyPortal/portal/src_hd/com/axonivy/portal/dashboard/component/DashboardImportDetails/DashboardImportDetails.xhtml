@@ -99,6 +99,13 @@
                     process="import-dashboard-title"
                     update="#{cc.clientId}:title-language-config:multiple-languages-dialog"
                     oncomplete="PF('multiple-languages-dialog').show();" />
+                    
+				 <p:commandButton id="add-language-button"
+                    icon="si si-chat-translate"
+                    actionListener="#{managedBean.updateDashboardTitleByLocale()}"
+                    process="import-dashboard-title"
+                    update="#{cc.clientId}:title-language-config:multiple-languages-dialog"
+                    oncomplete="PF('multiple-languages-dialog').show();" />
                 </div>
                 <h:panelGroup layout="block"
                   styleClass="ui-g-4 manage-dashboard__label"
